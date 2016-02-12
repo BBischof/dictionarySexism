@@ -106,3 +106,9 @@ Male gender pronouns used:
 ```
 [" he ", " He ", " he'", " He'", " him ", " Him ", " him'", " Him'", " man ", " Man ", " man'", " Man'", " male ", " Male ", " male'", " Male'", " his ", " His ", " his'", " His'"]
 ```
+
+## Feedback?
+
+If you want to do something with this code or these datasets, feel free. Please tweet at me [@bebischof](https://twitter.com/BEBischof) if you do. Also, if you have ideas on things you'd like to see me do with it, I'm open to suggestions. 
+
+Special thanks to AFINN for the dataset, Merriam-Webster for open-access knowledge, and Natalie for alerting me to the subject.
