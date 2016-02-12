@@ -57,7 +57,30 @@ this dataset is contained in `outputData.csv`.
 
 ## Analysis
 
-To-do!
+We begin with extremely elementary analysis:
+- `all sentiment words sum` is the sum of all sentiment values of words in AFINN, which is -1434.
+- `total sentiment sum of words in gendered sentences`, we compute the sum of sentiments of words that appear in sentences with a gendered pronoun.
+- `count of sentences with female pronouns` we count the number of sentences with female gendered pronouns in our corpus.
+- `count of sentences with male pronouns` we count the number of sentences with male gendered pronouns in our corpus.
+- `total sentiment sum of sentences with female pronouns` we compute the sum of sentiment of words that appear in sentences with female gendered pronouns. Note that this add the word's sentiment for each sentence that word appears in that also contains a female gendered pronoun.
+- `total sentiment sum of sentences with male pronouns` we compute the sum of sentiment of words that appear in sentences with male gendered pronouns. Note that this add the word's sentiment for each sentence that word appears in that also contains a male gendered pronoun.
+- `average sentiment of sentences with female pronouns` this is the average sentiment per sentence with female pronoun, calculated as a ratio of the sentiment sum to the count of sentences.
+- `average sentiment of sentences with male pronouns` this is the average sentiment per sentence with male pronoun, calculated as a ratio of the sentiment sum to the count of sentences.
+
+## Results by dictionary
+
+### Merriam-Webster
+------------------
+```
+total sentiment sum of words in gendered sentences:  -490
+count of sentences with female pronouns:  1059
+count of sentences with male pronouns:  1393
+total sentiment sum of sentences with female pronouns:  -376
+total sentiment sum of sentences with male pronouns:  -669
+average sentiment of sentences with female pronouns:  -0.355051935788
+average sentiment of sentences with male pronouns:  -0.480258435032
+```
+
 
 ## Gender pronouns
 
