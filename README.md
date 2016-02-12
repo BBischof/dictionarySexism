@@ -8,6 +8,17 @@ While his original examples are extremely illustrative, a more data science appr
 
 In some sense, this is going to return a measure of how often a particular gendered pronoun is used in the context of negative or positive words. In this case, we have a special advantage that sentiment analysis usually lacks: each sentence is tied to a unique word. To be more in the spirit of the original observation, it would make more sense to look at the sentiment of that word, rather than average the sentiment of the entire sentence. This ends up making analysis easier actually. 
 
+## A few definitions
+
+- `gendered pronouns` we refer to any of the pronouns listed below as gendered pronouns and we consider them to be binary: female or male. 
+- `gendered sentences` we refer to any sentence that contains a gendered pronoun as a gendered sentence. If the sentence contains a female pronoun, we consider the sentence to be a "female sentence" and similarly for male pronouns and "male sentences". Note that sentences that contain female AND male pronouns we refer to as "female sentences" AND "male sentences".
+- `word sentiment` we define the sentiment of a word as the value listed in the AFINN dataset corresponding to that word. If the word is not present in the AFINN dataset, we consider it to have zero sentiment. 
+- `sentence sentiment` the sentiment of a sentence can be defined as the sentiment of the word for which the example sentence references, the aggregate of sentiments of words in the sentence, or the average sentiment of words in the sentence. We will be clear which we are assuming.
+
+## AFINN
+
+For the purpose of obtaining sentiment scores, we use the well-known AFINN dataset. Specifically we use the `AFINN-111` dataset. You can read about the dataset and this project [here](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010).
+
 ## The data set
 
 The original goal was to use OED data, and then some other dictionaries as well. Currently, I don't have access to OED, and I haven't gotten around to other dictionaries besides Merriam-Webster(M-W henceforth), which graciously allows one to request their webpages directly. 
@@ -56,6 +67,8 @@ protest	-2	3	4
 this dataset is contained in `outputData.csv`.
 
 ## Analysis
+
+Utilizing the output of that csv, I wrote a small python script to compute some very basic statistics related to the dataset.
 
 We begin with extremely elementary analysis:
 - `all sentiment words sum` is the sum of all sentiment values of words in AFINN, which is -1434.
