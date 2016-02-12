@@ -1,6 +1,6 @@
 # Sexism in dictionaries
 
-Recently a friend, and anthropologist, brought to my attention the interaction discussed [here](https://medium.com/space-anthropology/sexism-in-the-oxford-dictionary-of-english-6d335c6a77b5#.ckk4vnor6). I was immediately interested by this, and realized the need for a deeper analysis. 
+Recently a friend and anthropologist, [Natalie Baloy](http://socialsciences.ucsc.edu/academics/singleton.php?&singleton=true&cruz_id=nbaloy), brought to my attention the interaction discussed [here](https://medium.com/space-anthropology/sexism-in-the-oxford-dictionary-of-english-6d335c6a77b5#.ckk4vnor6). I was immediately interested by this, and realized the need for a deeper analysis. 
 
 While his original examples are extremely illustrative, a more data science approach would be to look at all words, or at least, a large corpus of words, and analyze their example sentences for sexism. As far as I know, there is no NLP package for detecting bigotry of a particular kind, in text. But there are some proxies for this. One such would a somewhat naive approach:
 - pick out sentences where the subject is identified by a male/female pronoun
